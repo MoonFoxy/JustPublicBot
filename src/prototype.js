@@ -3,7 +3,7 @@ const { RichEmbed, TextChannel, Message, User } = require('discord.js');
 
 
 const Embeder = require('./structures/Embeder.js');
-const GuildDB = require('./structures/GuildDB.js');
+const GuildDB  = require('./structures/GuildDB.js');
 const MemberDB = require('./structures/MemberDB.js');
 
 Object.defineProperty(Guild.prototype, 'db', {

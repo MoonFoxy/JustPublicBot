@@ -4,13 +4,13 @@ const App = require('./structures/App.js');
 const fs = require('fs')
 const { token } = require('./config.json');
 
-const app = new App({
+module.exports = new App({
 	cmdFolders: './src/cmds/',
 	eventFolders: './src/events/',
 	clientOptions: { token }
 })
 
-module.exports = app
+const app = require('./')
 
 app.handler('cmds', (props, file, folder) => {
 	let { config, run } = props

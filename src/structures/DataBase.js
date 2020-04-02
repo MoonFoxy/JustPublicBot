@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { Collection } = require('discord.js');
-const app = require('../index.js');
 
 class DataBase{
 	constructor(name){

@@ -1,7 +1,6 @@
 const app = require('../index.js');
 const { dbGuilds: db } = app;
 const config = require('../config.json')
-
 class GuildDB{
 	constructor(id){
 		this.id = id

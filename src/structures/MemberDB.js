@@ -10,6 +10,7 @@ class MemberDB{
 		let memberDB = db.get(this.id) || {};
 		
 		this.marks = memberDB.marks || []
+		this.mute = memberDB.mute || null
 
 		if(!db.has(this.id)) db.set(this.id, this)
 	}
@@ -20,7 +21,7 @@ class MemberDB{
 			if(dbGuilds.has(guildID)) dbGuilds.remove(guildID);
 			return undefined;
 		}
-		let member = guild.members.get(memberID):
+		let member = guild.members.get(memberID)
 		if(!member){
 			if(db.has(this.id)) db.remove(this.id);
 			return undefined;
@@ -39,6 +40,9 @@ class MemberDB{
 		if(!this.hasMark(mark)) return;
 		this.marks.splice(this.marks.indexOf(mark), 1)
 		db.set(this.id, this);
+	}
+	mute(time){
+
 	}
 }
 
