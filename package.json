@@ -1,0 +1,14 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "DeitySenpai <deitysenpainio@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.6.1"
+  }
+}
